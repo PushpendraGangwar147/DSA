@@ -9,11 +9,9 @@ int main(){
     int right_diagonal_sum = 0;
     int left_diagonal_sum = 0;
 
-    // Right Diagonal Sum :-        if(i==j) sum += arr[i][j];
+    // Right Diagonal Sum :-        if(i==j) sum += arr[i][j];      OR      sum += arr[i][i];
     for(int i=0; i<4; i++){
-        for(int j=0; j<4; j++){
-            if(i==j) right_diagonal_sum += matrix[i][j];
-        }
+            right_diagonal_sum += matrix[i][i];       // j = i
     }
 
     // Left Diagonal Sum :-         sum += arr[i][n-i-1];
@@ -27,4 +25,5 @@ int main(){
 
 
     return 0;
+
 }
