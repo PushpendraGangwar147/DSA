@@ -1,0 +1,1 @@
+cout<<endl<<sizeof(arr);  
