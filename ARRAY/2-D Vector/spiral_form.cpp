@@ -1,4 +1,4 @@
-// Spiral Form :-
+// Spiral Form :- (LEETCODE 54)
 
 #include<iostream>
 #include<vector>
@@ -29,17 +29,23 @@ int main(){
         right_column--;
         cout<<endl;
 
-        // bottom row 
-        for(int i=right_column; i>=left_column; i--)   cout<<matrix[bottom_row][i]<<" ";
-        bottom_row--;
-        cout<<endl;
+        if(top <= bottom){
+            // bottom row 
+            for(int i=right_column; i>=left_column; i--)   cout<<matrix[bottom_row][i]<<" ";
+            bottom_row--;
+            cout<<endl;
+        }
+
+        if(left <= right){
+            // left column 
+            for(int i=bottom_row; i>=top_row; i--)   cout<<matrix[i][left_column]<<" ";
+            left_column++;
+            cout<<endl;
+        }
         
-        // left column 
-        for(int i=bottom_row; i>=top_row; i--)   cout<<matrix[i][left_column]<<" ";
-        left_column++;
-        cout<<endl;
     }
 
     
     return 0;
+
 }
