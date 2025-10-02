@@ -1,1 +1,1 @@
-👉 This file has 1-D Array Programmes
+👉 This file contains 1-D Array Programmes
