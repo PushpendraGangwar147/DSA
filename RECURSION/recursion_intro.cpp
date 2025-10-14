@@ -19,7 +19,5 @@ int main(){
     cin >> n;
     fun(n);
 
-
-
     return 0;
 }
