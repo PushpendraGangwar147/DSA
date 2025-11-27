@@ -11,7 +11,7 @@ int main(){
         if(b == 0) throw "can't divide by zero";
 
         int c = a/b;
-        cout<< "Addition is : "<< c<<endl;
+        cout<< "Division is : "<< c<<endl;
     }
     
     catch(const char *e){
@@ -20,4 +20,5 @@ int main(){
 
 
     return 0;
+
 }
