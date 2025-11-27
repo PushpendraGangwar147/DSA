@@ -18,12 +18,11 @@ int main(){
 }
 
 
-
-
 /*
 👉 bad_alloc : size valid hota hai, par memory nahi milti (memory overflow).
     new int[500000000]            (Size theek hai, par memory 2GB nahi mil rahi → bad_alloc)
 
 👉 bad_array_new_length : size hi invalid hota hai (bahut bada / limit se upar).
     new int[1000000000000000]     (Itna bada size C++ allow hi nahi karta → bad_array_new_length)
+
 */
